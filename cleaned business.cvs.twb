@@ -1,0 +1,640 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0805.0415                               -->
+<workbook original-version='18.1' source-build='2023.2.1 (20232.23.0805.0415)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='cleaned_business.csv (Multiple Connections)' inline='true' name='federated.0bnfj1s112wpte1817v8z1a1ehjk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_business' name='textscan.0bsqpqq0k915sq1a1lsyy1fphlz5'>
+            <connection class='textscan' directory='C:/Users/HI/Downloads' filename='cleaned_business.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='cleaned_business (2)' name='excel-direct.113tjst1sl5qiw1b57ji41tgaca7'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/HI/Downloads/cleaned_business.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0bsqpqq0k915sq1a1lsyy1fphlz5' name='cleaned_business.csv' table='[cleaned_business#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='naics_code' ordinal='0' />
+            <column datatype='string' name='Business_types' ordinal='1' />
+            <column datatype='integer' name='operating_expenses' ordinal='2' />
+            <column datatype='integer' name='annual_payroll' ordinal='3' />
+            <column datatype='integer' name='employer_cost' ordinal='4' />
+            <column datatype='real' name='employer_costs_health_insurance' ordinal='5' />
+            <column datatype='integer' name='employer_costs_contribution_plans' ordinal='6' />
+            <column datatype='real' name='employer_costs_pension_plans' ordinal='7' />
+            <column datatype='real' name='employer_costs_benefits' ordinal='8' />
+            <column datatype='real' name='contract_labor_costs' ordinal='9' />
+            <column datatype='integer' name='expensed_equipment_amount' ordinal='10' />
+            <column datatype='real' name='packaging_materials_and_containers' ordinal='11' />
+            <column datatype='real' name='parts_and_supplies_not_for_resale' ordinal='12' />
+            <column datatype='real' name='purchases_of_software' ordinal='13' />
+            <column datatype='real' name='data_processing_and_computer_services' ordinal='14' />
+            <column datatype='real' name='commission_expense_amount' ordinal='15' />
+            <column datatype='real' name='communication_services' ordinal='16' />
+            <column datatype='real' name='repairs_and_maintenance_of_equipment' ordinal='17' />
+            <column datatype='real' name='maintenance_of_buildings_offices' ordinal='18' />
+            <column datatype='real' name='rental_payment_for_machinery' ordinal='19' />
+            <column datatype='real' name='rental_payments_for_buildings_offices' ordinal='20' />
+            <column datatype='real' name='electricity' ordinal='21' />
+            <column datatype='real' name='fuels' ordinal='22' />
+            <column datatype='real' name='water_sewer_and_other_utility' ordinal='23' />
+            <column datatype='real' name='transportation_shipping_warehousing' ordinal='24' />
+            <column datatype='integer' name='advertising_and_promotional_services' ordinal='25' />
+            <column datatype='real' name='professional_and_technical_services' ordinal='26' />
+            <column datatype='real' name='depreciation_and_amortization' ordinal='27' />
+            <column datatype='real' name='taxes_and_license' ordinal='28' />
+            <column datatype='real' name='other_operating_expenses' ordinal='29' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0bsqpqq0k915sq1a1lsyy1fphlz5' name='cleaned_business.csv' table='[cleaned_business#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='naics_code' ordinal='0' />
+            <column datatype='string' name='Business_types' ordinal='1' />
+            <column datatype='integer' name='operating_expenses' ordinal='2' />
+            <column datatype='integer' name='annual_payroll' ordinal='3' />
+            <column datatype='integer' name='employer_cost' ordinal='4' />
+            <column datatype='real' name='employer_costs_health_insurance' ordinal='5' />
+            <column datatype='integer' name='employer_costs_contribution_plans' ordinal='6' />
+            <column datatype='real' name='employer_costs_pension_plans' ordinal='7' />
+            <column datatype='real' name='employer_costs_benefits' ordinal='8' />
+            <column datatype='real' name='contract_labor_costs' ordinal='9' />
+            <column datatype='integer' name='expensed_equipment_amount' ordinal='10' />
+            <column datatype='real' name='packaging_materials_and_containers' ordinal='11' />
+            <column datatype='real' name='parts_and_supplies_not_for_resale' ordinal='12' />
+            <column datatype='real' name='purchases_of_software' ordinal='13' />
+            <column datatype='real' name='data_processing_and_computer_services' ordinal='14' />
+            <column datatype='real' name='commission_expense_amount' ordinal='15' />
+            <column datatype='real' name='communication_services' ordinal='16' />
+            <column datatype='real' name='repairs_and_maintenance_of_equipment' ordinal='17' />
+            <column datatype='real' name='maintenance_of_buildings_offices' ordinal='18' />
+            <column datatype='real' name='rental_payment_for_machinery' ordinal='19' />
+            <column datatype='real' name='rental_payments_for_buildings_offices' ordinal='20' />
+            <column datatype='real' name='electricity' ordinal='21' />
+            <column datatype='real' name='fuels' ordinal='22' />
+            <column datatype='real' name='water_sewer_and_other_utility' ordinal='23' />
+            <column datatype='real' name='transportation_shipping_warehousing' ordinal='24' />
+            <column datatype='integer' name='advertising_and_promotional_services' ordinal='25' />
+            <column datatype='real' name='professional_and_technical_services' ordinal='26' />
+            <column datatype='real' name='depreciation_and_amortization' ordinal='27' />
+            <column datatype='real' name='taxes_and_license' ordinal='28' />
+            <column datatype='real' name='other_operating_expenses' ordinal='29' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>naics_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[naics_code]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>naics_code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business_types</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Business_types]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>Business_types</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operating_expenses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[operating_expenses]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>operating_expenses</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>annual_payroll</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[annual_payroll]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>annual_payroll</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employer_cost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[employer_cost]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>employer_cost</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employer_costs_health_insurance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[employer_costs_health_insurance]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>employer_costs_health_insurance</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employer_costs_contribution_plans</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[employer_costs_contribution_plans]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>employer_costs_contribution_plans</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employer_costs_pension_plans</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[employer_costs_pension_plans]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>employer_costs_pension_plans</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employer_costs_benefits</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[employer_costs_benefits]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>employer_costs_benefits</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contract_labor_costs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[contract_labor_costs]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>contract_labor_costs</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expensed_equipment_amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[expensed_equipment_amount]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>expensed_equipment_amount</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>packaging_materials_and_containers</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[packaging_materials_and_containers]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>packaging_materials_and_containers</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parts_and_supplies_not_for_resale</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[parts_and_supplies_not_for_resale]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>parts_and_supplies_not_for_resale</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>purchases_of_software</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[purchases_of_software]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>purchases_of_software</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_processing_and_computer_services</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[data_processing_and_computer_services]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>data_processing_and_computer_services</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>commission_expense_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[commission_expense_amount]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>commission_expense_amount</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>communication_services</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[communication_services]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>communication_services</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>repairs_and_maintenance_of_equipment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[repairs_and_maintenance_of_equipment]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>repairs_and_maintenance_of_equipment</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maintenance_of_buildings_offices</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[maintenance_of_buildings_offices]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>maintenance_of_buildings_offices</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rental_payment_for_machinery</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rental_payment_for_machinery]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>rental_payment_for_machinery</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rental_payments_for_buildings_offices</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rental_payments_for_buildings_offices]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>rental_payments_for_buildings_offices</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>electricity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[electricity]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>electricity</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fuels</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fuels]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>fuels</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>water_sewer_and_other_utility</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[water_sewer_and_other_utility]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>water_sewer_and_other_utility</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transportation_shipping_warehousing</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[transportation_shipping_warehousing]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>transportation_shipping_warehousing</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>advertising_and_promotional_services</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[advertising_and_promotional_services]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>advertising_and_promotional_services</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>professional_and_technical_services</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[professional_and_technical_services]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>professional_and_technical_services</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>depreciation_and_amortization</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[depreciation_and_amortization]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>depreciation_and_amortization</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>taxes_and_license</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[taxes_and_license]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>taxes_and_license</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other_operating_expenses</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[other_operating_expenses]</local-name>
+            <parent-name>[cleaned_business.csv]</parent-name>
+            <remote-alias>other_operating_expenses</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Business types' datatype='string' name='[Business_types]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='cleaned_business.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]' role='measure' type='quantitative' />
+      <column caption='Advertising And Promotional Services' datatype='integer' name='[advertising_and_promotional_services]' role='measure' type='quantitative' />
+      <column caption='Annual Payroll' datatype='integer' name='[annual_payroll]' role='measure' type='quantitative' />
+      <column caption='Commission Expense Amount' datatype='real' name='[commission_expense_amount]' role='measure' type='quantitative' />
+      <column caption='Communication Services' datatype='real' name='[communication_services]' role='measure' type='quantitative' />
+      <column caption='Contract Labor Costs' datatype='real' name='[contract_labor_costs]' role='measure' type='quantitative' />
+      <column caption='Data Processing And Computer Services' datatype='real' name='[data_processing_and_computer_services]' role='measure' type='quantitative' />
+      <column caption='Depreciation And Amortization' datatype='real' name='[depreciation_and_amortization]' role='measure' type='quantitative' />
+      <column caption='Electricity' datatype='real' name='[electricity]' role='measure' type='quantitative' />
+      <column caption='Employer Cost' datatype='integer' name='[employer_cost]' role='measure' type='quantitative' />
+      <column caption='Employer Costs Benefits' datatype='real' name='[employer_costs_benefits]' role='measure' type='quantitative' />
+      <column caption='Employer Costs Contribution Plans' datatype='integer' name='[employer_costs_contribution_plans]' role='measure' type='quantitative' />
+      <column caption='Employer Costs Health Insurance' datatype='real' name='[employer_costs_health_insurance]' role='measure' type='quantitative' />
+      <column caption='Employer Costs Pension Plans' datatype='real' name='[employer_costs_pension_plans]' role='measure' type='quantitative' />
+      <column caption='Expensed Equipment Amount' datatype='integer' name='[expensed_equipment_amount]' role='measure' type='quantitative' />
+      <column caption='Fuels' datatype='real' name='[fuels]' role='measure' type='quantitative' />
+      <column caption='Maintenance Of Buildings Offices' datatype='real' name='[maintenance_of_buildings_offices]' role='measure' type='quantitative' />
+      <column caption='Naics Code' datatype='integer' name='[naics_code]' role='dimension' type='ordinal' />
+      <column caption='Operating Expenses' datatype='integer' name='[operating_expenses]' role='measure' type='quantitative' />
+      <column caption='Other Operating Expenses' datatype='real' name='[other_operating_expenses]' role='measure' type='quantitative' />
+      <column caption='Packaging Materials And Containers' datatype='real' name='[packaging_materials_and_containers]' role='measure' type='quantitative' />
+      <column caption='Parts And Supplies Not For Resale' datatype='real' name='[parts_and_supplies_not_for_resale]' role='measure' type='quantitative' />
+      <column caption='Professional And Technical Services' datatype='real' name='[professional_and_technical_services]' role='measure' type='quantitative' />
+      <column caption='Purchases Of Software' datatype='real' name='[purchases_of_software]' role='measure' type='quantitative' />
+      <column caption='Rental Payment For Machinery' datatype='real' name='[rental_payment_for_machinery]' role='measure' type='quantitative' />
+      <column caption='Rental Payments For Buildings Offices' datatype='real' name='[rental_payments_for_buildings_offices]' role='measure' type='quantitative' />
+      <column caption='Repairs And Maintenance Of Equipment' datatype='real' name='[repairs_and_maintenance_of_equipment]' role='measure' type='quantitative' />
+      <column caption='Taxes And License' datatype='real' name='[taxes_and_license]' role='measure' type='quantitative' />
+      <column caption='Transportation Shipping Warehousing' datatype='real' name='[transportation_shipping_warehousing]' role='measure' type='quantitative' />
+      <column caption='Water Sewer And Other Utility' datatype='real' name='[water_sewer_and_other_utility]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='cleaned_business.csv' id='cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6'>
+            <properties context=''>
+              <relation connection='textscan.0bsqpqq0k915sq1a1lsyy1fphlz5' name='cleaned_business.csv' table='[cleaned_business#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='naics_code' ordinal='0' />
+                  <column datatype='string' name='Business_types' ordinal='1' />
+                  <column datatype='integer' name='operating_expenses' ordinal='2' />
+                  <column datatype='integer' name='annual_payroll' ordinal='3' />
+                  <column datatype='integer' name='employer_cost' ordinal='4' />
+                  <column datatype='real' name='employer_costs_health_insurance' ordinal='5' />
+                  <column datatype='integer' name='employer_costs_contribution_plans' ordinal='6' />
+                  <column datatype='real' name='employer_costs_pension_plans' ordinal='7' />
+                  <column datatype='real' name='employer_costs_benefits' ordinal='8' />
+                  <column datatype='real' name='contract_labor_costs' ordinal='9' />
+                  <column datatype='integer' name='expensed_equipment_amount' ordinal='10' />
+                  <column datatype='real' name='packaging_materials_and_containers' ordinal='11' />
+                  <column datatype='real' name='parts_and_supplies_not_for_resale' ordinal='12' />
+                  <column datatype='real' name='purchases_of_software' ordinal='13' />
+                  <column datatype='real' name='data_processing_and_computer_services' ordinal='14' />
+                  <column datatype='real' name='commission_expense_amount' ordinal='15' />
+                  <column datatype='real' name='communication_services' ordinal='16' />
+                  <column datatype='real' name='repairs_and_maintenance_of_equipment' ordinal='17' />
+                  <column datatype='real' name='maintenance_of_buildings_offices' ordinal='18' />
+                  <column datatype='real' name='rental_payment_for_machinery' ordinal='19' />
+                  <column datatype='real' name='rental_payments_for_buildings_offices' ordinal='20' />
+                  <column datatype='real' name='electricity' ordinal='21' />
+                  <column datatype='real' name='fuels' ordinal='22' />
+                  <column datatype='real' name='water_sewer_and_other_utility' ordinal='23' />
+                  <column datatype='real' name='transportation_shipping_warehousing' ordinal='24' />
+                  <column datatype='integer' name='advertising_and_promotional_services' ordinal='25' />
+                  <column datatype='real' name='professional_and_technical_services' ordinal='26' />
+                  <column datatype='real' name='depreciation_and_amortization' ordinal='27' />
+                  <column datatype='real' name='taxes_and_license' ordinal='28' />
+                  <column datatype='real' name='other_operating_expenses' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_business.csv (Multiple Connections)' name='federated.0bnfj1s112wpte1817v8z1a1ehjk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bnfj1s112wpte1817v8z1a1ehjk'>
+            <_.fcp.ObjectModelTableType.true...column caption='cleaned_business.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='cleaned_business.csv' datatype='integer' name='[__tableau_internal_object_id__].[cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0bnfj1s112wpte1817v8z1a1ehjk].[__tableau_internal_object_id__].[cnt:cleaned_business.csv_BB8EEEC5DC504F6BA563AA7B6BE8B3F6:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{66A3C105-AD0D-46CF-A3FA-4F40BFCD7FB6}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BCE52528-EAD3-4178-8969-CD0E16FBD88F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='24' name='Sheet 1' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAABgElEQVRYhe2YP0gCYRjGH6NEiI7WJKgtiKChb0gEyxqkRFwkKQijoaE5MSS0ECSEMmip
+      IZB2IQ2i1RuC4IaQijCQIEhqMLAswYO3pch/Q//o4877je89Lzz3O+4bPh0REZqYFt4FeKMJ
+      4F2AN5oA3gV4owngXYA3mgDeBXijCeBdgDeaAN4Ffs8DxOgiXFYTGGMwWV1Yimch18aKJwjZ
+      GFhQrBorX0Aph0fjPLYSKUiShFRiFf3JZexlKkMyLmO7KLln0VezrnwBhkE43Qzdgh4AoBcG
+      MDoioPD0GZGz+9i+88A33lm3rnwBFcgvOZwfhrCedmBq6GN6j0T0Cg7fGIQGOyoRICLIGIYt
+      04hkzAhEnOh5f1I42sDpxAomG709AJ0qb4TEIDy3CwjDD2f0okHAjk1pDRYAIKVzdkA74jXl
+      i2UiIioXs5T02sl7/FyfvYnRTCBVNWr952/z93QZYYiH4fankX8F2jp6YZ4LI2Br/9K6On+B
+      b6CSQ/DnNL2AN5HPT5/SZpVDAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
